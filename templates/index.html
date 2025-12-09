@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective Demo</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="../static/js/validator.js" defer></script>
+    </head>
+    <body> 
+        <div class="form-div">
+            <h1>Perspective AI Text Sanitation Demo</h1>
+            <form id="validation-form">
+                <label>Take: </label>
+                <input type="text" required id="demo-text-input">
+                <button type="submit">Validate</button>
+            </form>
+        </div>
+        <div class="random-text-generator-div">
+            <span id="random-comment-span"></span>
+            <button onclick="generateRandomComment()">Generate Random Comment!</button>
+        </div>
+        <div id = 'validation-results'>
+            <table id="scores-table">
+                
+            </table>    
+        </div>
+        
+    </body>
+</html>
